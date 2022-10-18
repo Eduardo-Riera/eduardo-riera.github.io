@@ -1,0 +1,60 @@
+.miNavbar{
+    background: linear-gradient(180deg, rgb(68, 20, 84), rgb(59, 76, 0));
+}
+.miTitulo{
+    font-weight: bold;
+    color: aliceblue;
+    text-shadow: 5px 5px 3px #441454;
+}
+body{
+    box-sizing: border-box;
+    background: linear-gradient(180deg, rgb(59, 76, 0), rgb(68, 20, 84));
+}
+.miForm{
+    padding-right: 15px;
+    padding-top: 8px;
+}
+.miBoton{
+    background-color: #3b4c00;
+}
+.miParrafo{
+    color: aliceblue;   
+}
+.miRow{
+    border-radius: 10px;
+    background-color: #3b4c00;
+    border: solid 1px #441454;
+    margin-top: 2px;
+}
+.miCarousel{
+    border-radius: 7px;
+}
+.imagen{
+    margin-top: 15px;
+    border-radius: 5%;
+}
+footer{
+    margin: 0px;
+    padding: 0px;
+}
+.miPie{
+    margin-top: 0px;
+    padding-top: 10px;
+    /* padding-bottom: 30px; */
+    /* background: linear-gradient(360deg, rgb(59, 76, 0), rgb(68, 20, 84));; */
+}
+.miIframe{
+    border: 0;
+	top: 0;
+    left: 0;
+	width:100%;
+    /* position: relative; */
+}
+@media screen and (max-width: 576px){
+	.miParrafo{
+		font-size: 12px;
+	}
+    .miTituloEtiqueta{
+        font-size: 22px;
+    }
+}

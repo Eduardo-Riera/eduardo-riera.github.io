@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eduardo J. Riera">    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Destinos turísticos</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md miNavbar navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="http://www.ispc.edu.ar" target="_blank">
+                <img src="images/ispc.png" alt="" width="80">
+            </a>
+            <button class="navbar-toggler " 
+                type="button" 
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="toggle navigation">
+
+                <span><img src="images/icono.jpg" alt="" width="40"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav">
+                    <a class="nav-link miA" aria-current="page" href="principal.html" target="miInicio">Inicio</a>
+
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Destinos
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark">
+                          <a class="dropdown-item" href="#">Argentina</a>
+                          <a class="dropdown-item" href="#">México</a>
+                          <!-- <hr class="dropdown-divider"> -->
+                          <a class="dropdown-item" href="#">Brasil</a>
+                          <a class="dropdown-item" href="#">Perú</a>
+                          <a class="dropdown-item" href="#">Egipto</a>
+                          <a class="dropdown-item" href="#">Italia</a>
+                          <a class="dropdown-item" href="#"></a>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <a class="nav-link" href="presentacion/presentacion.html" target="miInicio">Nosotros</a>
+                    <a class="nav-link" href="#">Registro</a>
+                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Usuario</a>
+                    <div class="position-absolute end-0">
+                        <form class="d-flex miForm" role="search" action="http://www.google.com" target="_blank">
+                            <input class="form-control me-2" type="search" placeholder="Google" aria-label="Search">
+                            <button class="btn btn-outline-success miBoton" type="submit">Buscar</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </nav>
+
+    
+    
+        <iframe id="target" class="miIframe container-fluid" name="miInicio" src="principal.html" scrolling="no">
+            
+        </iframe>
+
+    <footer>
+        <div class="container-fluid miPie text-white text-center ">
+            <p>&copy; 2022 GGG grupo de estudiantes</p>
+        </div>
+    </footer>
+    <script>
+        var div = document.getElementById("target");
+        div.onload = function() {
+            div.style.height =
+              div.contentWindow.document.body.scrollHeight +'px';
+        }                                                              
+    </script>
+    <script src="main.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
