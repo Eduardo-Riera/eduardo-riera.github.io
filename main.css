@@ -116,7 +116,7 @@ footer{
 }
 .iframeParrafoContenido{
     color: #fcf304;
-    height: 100%;
+    /* height: 100%; */
     text-align: justify;
 }
 /* .embed-container {
