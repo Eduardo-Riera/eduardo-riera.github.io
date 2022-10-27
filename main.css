@@ -81,9 +81,9 @@ footer{
     /* text-align: justify; */
     margin-bottom: 0px;
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     .parrafoContenido{
-        font-size: 12px;
+        font-size: 10px;
     }
     .labelContenido{
         font-size: 14px;
