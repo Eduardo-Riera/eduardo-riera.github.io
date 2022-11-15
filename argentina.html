@@ -12,6 +12,28 @@
 
 </head>
     <body>
+        	<!-- Modal -->
+	<div class="modal fade" data-bs-backdrop="static"  id="imagenModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content text-light" id="bgImagenModal">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Rio Wanda, Misiones</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+
+                    <img src="imagenes_argentina/parque_nacional_iguazu_rio.PNG" class="img-fluid" alt="Rio Wanda, Misiones">
+                </div>
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Guardar cambios</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- fin modal -->
         <header class="sticky-top">
             <nav class="navbar navbar-expand-md miNavbar navbar-dark">
                 <div class="container-fluid">
@@ -40,7 +62,7 @@
                                 <a class="dropdown-item" href="argentina.html" target="_self">Argentina</a>
                                 <a class="dropdown-item" href="#">México</a>
                                 <!-- <hr class="dropdown-divider"> -->
-                                <a class="dropdown-item" href="#">Brasil</a>
+                                <a class="dropdown-item" href="brasil.html" target="_self">Brasil</a>
                                 <a class="dropdown-item" href="#">Perú</a>
                                 <a class="dropdown-item" href="#">Egipto</a>
                                 <a class="dropdown-item" href="#">Italia</a>
@@ -63,14 +85,16 @@
                 </div>        
             </nav>
         </header>
+
         <!-- -------------------------Contenido-------------------------- -->
         <section>
             <div class="container-fluid">
                 <p class="miTitulo text-white text-center display-4 fw-bold"><strong>ARGENTINA</strong></p>
+                <p class="miTitulo text-white text-center display-6 fw-bold"><strong>Destinos recomendados</strong></p>
                 <div class="row">
                     <div class="col-6 text-center p-2">
-                        <div class="imagenContenido">
-                            <img class="imagen" src="imagenes_argentina/parque_nacional_iguazu_rio.PNG" alt="Parque Nacional Iguazu, rio" title="Parque Nacional Iguazu, rio" width="95%">
+                        <div class="imagenContenido container-fluid" data-bs-toggle="modal" data-bs-target="#imagenModal">
+                            <a href="#"><img class="imagen" src="imagenes_argentina/parque_nacional_iguazu_rio.PNG" alt="Rio Wanda, Misiones" title="Rio Wanda, Misiones" width="95%"></a>
                         </div>
                         <div>
                             <p class="parrafoContenido">

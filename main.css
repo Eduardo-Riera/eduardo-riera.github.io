@@ -4,6 +4,9 @@
 #mi_modal {
 	background: linear-gradient(270deg, rgb(68, 20, 84), rgb(59, 76, 0));	
 }
+#bgImagenModal{
+    background: linear-gradient(90deg, rgb(68, 20, 84), rgb(59, 76, 0));
+}
 
 .miTitulo{
     font-family: 'Times New Roman', Times, serif;
@@ -47,6 +50,12 @@ body{
 .imagen{
     margin-top: 15px;
     border-radius: 5%;
+    transition: 0.3s ease;
+    transform: rotate(5deg);
+}
+.imagen:hover{
+    box-shadow: 5px 5px 10px gray;
+    transform: scale(1.03);     
 }
 
 footer{
